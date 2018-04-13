@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="nt:unstructured"
+          allow="1">
+    <jcr:content jcr:primaryType="nt:unstructured"
+                 jcr:description="Activation statistics per market/locale"
+                 jcr:title="Not Activated Pages Info"
+                 sling:resourceType="taradevko/components/activationStatistics/tile">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+        <default jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/projects/admin/dashboard/tile">
+                <layout jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/projects/admin/dashboard/layouts/tile"/>
+            <header jcr:primaryType="nt:unstructured">
+                <title jcr:primaryType="nt:unstructured" jcr:title="Not Activated Pages Info"/>
+            </header>
+            <body jcr:primaryType="nt:unstructured" sling:resourceType="taradevko/components/activationStatistics/body"/>
+        </default>
+    </jcr:content>
+</jcr:root>

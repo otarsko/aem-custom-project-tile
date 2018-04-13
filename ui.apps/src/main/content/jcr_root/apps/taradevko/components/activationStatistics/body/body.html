@@ -1,0 +1,13 @@
+<div class="cq-projects-AppDetails cq-projects-Pod-content"
+     data-sly-use.info="com.taradevko.aem.granite.ActivationStatistics">
+
+    <section class="coral-light" data-sly-repeat.market="${info.activationStatistics}">
+        <h2 class="coral-Heading coral-Heading--2">${market}</h2>
+
+        <coral-list>
+            <coral-list-item data-sly-repeat.locale="${info.activationStatistics[market]}">${locale} -> ${info.activationStatistics[market][locale]}</coral-list-item>
+        </coral-list>
+    </section>
+</div>
+
+
